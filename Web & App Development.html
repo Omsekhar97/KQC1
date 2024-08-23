@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Quest Company</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .section .container {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-list {
+            display: flex;
+            justify-content: space-between;
+            /* Ensures even spacing between the cards */
+            flex-wrap: wrap;
+            /* Ensures cards stay on one row and wraps if necessary */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid-list li {
+            flex: 1;
+            /* Ensures that all cards take up equal width */
+            margin: 10px;
+            /* Adds space around each card */
+            min-width: 250px;
+            /* Prevents cards from becoming too narrow on small screens */
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-icon {
+            font-size: 40px;
+            color: #fff;
+            padding: 20px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+        <style>
+/* Basic styles for the navbar */
+.navbar {
+  /* Add your navbar styles here */
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-link {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: #333; /* Default text color */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.navbar-link:hover {
+  background-color: #ddd; /* Background color on hover */
+}
+
+/* Dropdown specific styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: ' ▼'; /* Adds a small arrow to indicate dropdown */
+  font-size: 12px;
+}
+
+.dropdown-menu,
+.dropdown-submenu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff; /* Change this to match your navbar's color scheme */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-submenu:hover .dropdown-submenu-list {
+  display: block;
+}
+
+.dropdown-submenu-list {
+  left: 100%;
+  top: 0;
+}
+
+.dropdown-menu li,
+.dropdown-submenu-list li {
+  width: 200px;
+}
+
+.dropdown-menu a,
+.dropdown-submenu-list a {
+  padding: 10px 15px;
+  display: block;
+  color: #333; /* Change this to match your text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.dropdown-menu a:hover,
+.dropdown-submenu-list a:hover {
+  background-color: #f1f1f1; /* Change this to your desired hover color */
+}
+
+    </style>
+
+
+</head>
+
+<body id="top">
+
+    <!--  
+    - #HEADER
+  -->
+
+    <header style="border-width: 0;" class="header" data-header>
+        <div class="container">
+
+           <a href="index.html" class="logo"><img src="./assets/img/kqc1.jpeg" alt="" width="130px" height="50px"/><sub style="font-size: 15px;color: red">Knowledge Quest Company</sub></a>
+<nav class="navbar container" data-navbar>
+  <ul class="navbar-list">
+
+    <li>
+      <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+    </li>
+
+    <li>
+      <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+    </li>
+
+    <li class="dropdown">
+      <a href="#service" class="navbar-link dropdown-toggle" data-nav-link>Services</a>
+      <ul class="dropdown-menu">
+        
+        <li class="dropdown-submenu">
+          <a href="Branding.html" class="navbar-link">Branding</a>
+          <ul class="dropdown-submenu-list">
+            <li><a href="Branding.html" class="navbar-link">Logo Designing</a></li>
+            <li><a href="Branding.html" class="navbar-link">Graphic Designing</a></li>
+            <li><a href="Branding.html" class="navbar-link">Content Creation</a></li>
+            <li><a href="Branding.html" class="navbar-link">Label Designing</a></li>
+
+          </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a href="Web & App Development.html" class="navbar-link">Web & Mobile App Development</a>
+          <ul class="dropdown-submenu-list">
+            <li><a href="Web & App Development.html" class="navbar-link">UI/UX Designing</a></li>
+            <li><a href="Web & App Development.html" class="navbar-link">Web Development</a></li>
+            <li><a href="Web & App Development.html" class="navbar-link">Mobile App Development</a></li>
+            <li><a href="Web & App Development.html" class="navbar-link">E-commerce App Development</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a href="Digital Marketing.html" class="navbar-link">Digital Marketing</a>
+          <ul class="dropdown-submenu-list">
+            <li><a href="Digital Marketing.html" class="navbar-link">SEO</a></li>
+            <li><a href="Digital Marketing.html" class="navbar-link">PPC</a></li>
+            <li><a href="Digital Marketing.html" class="navbar-link">Social Media Marketing</a></li>
+             <li><a href="Digital Marketing.html" class="navbar-link">Online Reputation Management</a></li>
+             <li><a href="Digital Marketing.html" class="navbar-link">Conversion Rate Optimization</a></li>
+
+             <li><a href="Digital Marketing.html" class="navbar-link">Email Marketing</a></li>
+
+             <li><a href="Digital Marketing.html" class="navbar-link">Content Marketing</a></li>
+
+
+          </ul>
+        </li>
+        <li>
+          <a href="customer.html" class="navbar-link" data-nav-link>Customer Services</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+            <a href="#project" class="navbar-link" data-nav-link>Project</a>
+          </li> 
+
+    <li>
+      <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+    </li>
+
+  </ul>
+</nav>
+
+
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" class="open"></ion-icon>
+                <ion-icon name="close-outline" class="close"></ion-icon>
+            </button>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+            <br><br>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="section hero" id="home" aria-label="hero">
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <!-- <p class="hero-subtitle">Leading Digital Marketing Agency in India</p> -->
+
+                        <h1 style="font-size: 35px; color: cornflowerblue" class="h1 hero-title">Develop Your Business with Stunning Website and Mobile Apps</h1>
+
+                        <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="hero-text">
+                            A visually striking and user-friendly website and customized mobile applications elevate your brand’s trust.
+                        </p>
+
+                        <!-- <a href="#" class="btn btn-primary">START A PROJECT</a> -->
+
+                    </div>
+
+                    <figure class="hero-banner">
+                        <img src="./assets/img/webmobilewallpaper.jpg" width="720" height="673" alt="hero banner"
+                            class="w-100">
+                    </figure>
+
+                </div>
+            </section>
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <!-- <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner img-holder" style="--width: 620; --height: 500;">
+            <img src="./assets/img/about.jpg" width="720" height="60" loading="" alt=""
+              class="img-cover">
+          </div>
+
+          <div class="about-content">
+            <h2 class="h2 section-title">Who we are</h2>
+            <h3 class="h3">Hello! We are Knowledge Quest!</h3>
+
+            <p class="section-text">
+              Knowledge Quest emerged with a mission to empower companies to harness the full potential of digital
+              marketing technologies, nurturing the growth of their online presence. Our team comprises passionate
+              digital marketing superheroes, on a mission to zap companies with the full power of digital marketing
+              wizardry!
+              <br /><br />We&#x27;re not your average marketers. We&#x27;re the wild thinkers, the engagement conjurers,
+              and the connection whisperers, creating memorable magic between companies and their dreamy audience. If
+              you&#x27;re on the hunt for a team that can transform your brand&#x27;s vision and start an epic digital
+              marketing journey, then congrats, because your quest ends right here!
+            </p>
+
+          </div>
+
+        </div>
+      </section> -->
+
+
+
+            <!-- 
+        - #SERVICE
+      -->
+
+            <section class="section service" id="service" aria-label="service">
+                <div class="container">
+
+                    <h2 style="color: #984a86;" class="h2 section-title">Web & Mobile App Development Company</h2>
+
+                    <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="section-text">
+                        In today's digital age, where Gen Z consumers conduct online research before making purchases, digital marketing is essential for business growth. Its precise targeting, transparent tracking, and cost-effectiveness unlock opportunities. Whether you seek to enhance online visibility or target marketing with SEO, SMM, or paid advertising, we're here to assist!.
+                    </p>
+
+                    <ul class="grid-list">
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon" style="background-color: #13c4a1">
+                                    <ion-icon name="chatbox"></ion-icon>
+                                </div>
+                                <h3 class="h3">
+                                    <a href="#ui" class="card-title">UI/ UX Designing</a>
+                                </h3>
+                                <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="card-text">
+                                    Deliver seamless experiences through intuitive interfaces designed by our expert
+                                    UI/UX designers. <br><br><br><br>
+                                </p> 
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon" style="background-color: #6610f2">
+                                    <ion-icon name="desktop"></ion-icon>
+                                </div>
+                                <h3 class="h3">
+                                    <a href="#about" class="card-title">Web Development</a>
+                                </h3>
+                                <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="card-text">
+                                    Build a fully functional, responsive and scalable websites with our customized web
+                                    development services <br><br><br><br>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon" style="background-color: #ffb700">
+                                    <ion-icon name="bulb"></ion-icon>
+                                </div>
+                                <h3 class="h3">
+                                    <a href="#fullstack" class="card-title">Mobile App Development</a>
+                                </h3>
+                                <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="card-text">
+                                    Make your business Gen-Z friendly with our cutting-edge mobile app solutions.<br><br><br><br>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon" style="background-color: #fc3549">
+                                    <ion-icon name="phone-portrait"></ion-icon>
+                                </div>
+                                <h3 class="h3">
+                                    <a href="#e-commerce" class="card-title">E-commerce Mobile App Development</a>
+                                </h3>
+                                <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="card-text">
+                                    Empowering your online business with tailored e-commerce development solutions that
+                                    optimize user experiences and drive revenue growth.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about" id="about" aria-label="about">
+                <div class="container">
+
+                    <div class="about-banner img-holder" style="--width: 620; --height: 500;">
+                        <img src="./assets/img/webdevelopment.jpg" width="720" height="60" loading="" alt="" class="img-cover">
+                    </div>
+
+                    <div class="about-content">
+
+                        <h2 class="h2 section-title">Web Development</h2>
+
+                        <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="section-text">
+                            Showcase services and engage customers effectively with professional websites and mobile
+                            apps. With our cutting-edge development services, you can incorporate modern features like
+                            live chat and feedback forums and transform your online presence for interaction and growth.
+                        </p>
+                        <!-- <a href="#" class="btn btn-primary">LET'S TALK</a> -->
+                    </div>
+                    
+
+                </div>
+            </section>
+
+            <!--  -->
+
+            <section class="section about" id="ui" aria-label="about" style="background-color: #5ca7f13b;">
+                <div class="container">
+                    <div class="about-content">
+                        <h2 class="h2 section-title">UI / UX Design</h2>
+                        <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="section-text"> 
+                            Creat a visually striking inter face and seamless website experience to your audience with our exceptional UI/UX services. Keeping the brand image and addience behavoiur in mind, our UI/UX artists meticulously design each element, ensuring a delightful and intuitive user experience.
+                        </p>
+                    </div>
+                    <div class="about-banner img-holder" style="--width: 620; --height: 500;">
+                        <img src="./assets/img/ui.jpg" width="720" height="60" loading="" alt="" class="img-cover">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section about" id="fullstack" aria-label="about" style="background-color: #5cf1ce3b;">
+                <div class="container">
+                    <div class="about-banner img-holder" style="--width: 620; --height: 500;">
+                        <img src="./assets/img/fullstack.jpg" width="720" height="60" loading="" alt="" class="img-cover">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="h2 section-title">Full Stack Development</h2>
+                        <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="section-text"> 
+                           Bring Your dream website into life with our proficient and comprehensive full stack development services. Utilizing the latest technologies and best practices, our coding geek ensure the website is fully functional and future-ready from both front-end and back-end aspects.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- <section class="section about" id="cms" aria-label="about" style="background-color: #f1ec5c3b;">
+                <div class="container">
+                    <div class="about-content">
+                        <h2 class="h2 section-title">CMS Development</h2>
+                        <p class="section-text"> 
+                            Effortlessly manage your website's content, from text and images to videos and documents with our advanced Content management Systems services. Tailored to your needs, our experts create easy-to-use CMS interfaces that make your content management smooth and secure.
+                        </p>
+                    </div>
+                    <div class="about-banner img-holder" style="--width: 620; --height: 500;">
+                        <img src="./assets/img/cms.jpg" width="720" height="60" loading="" alt="" class="img-cover">
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="section about" id="e-commerce" aria-label="about" style="background-color: #f17c5c3b;">
+                <div class="container">
+                    <div class="about-banner img-holder" style="--width: 620; --height: 500;">
+                        <img src="./assets/img/ecommerce.jpg" width="720" height="60" loading="" alt="" class="img-cover">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="h2 section-title">E-commerce</h2>
+                        <p style=" color: hsl(220deg 25.57% 28.34%) !important;" class="section-text"> 
+                            Deliver a seamless shopping experience to your customers with our customized e-commerce application services. Leveraging the latest technologies, our web application specialists build a robust and dynamic application that ensure secure e-commerce and take your business to new heights.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <p class="copyright">
+                &copy; 2024 All Rights Reserved by <a href="#" class="copyright-link">Knowledge Quest Company</a>
+            </p>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" aria-label="back to top" data-back-top-btn class="back-top-btn">
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
